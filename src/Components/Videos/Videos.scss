@@ -1,0 +1,197 @@
+.video{
+    width: 80%;
+    padding: 86px 20px 30px;
+    height: 100vh;
+    overflow-y: auto;
+    &__player{
+        width: 100%;
+        border-radius: 14px;
+    }
+    &__title{
+        margin: 20px 0 14px;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 45px;
+        color: #192646;
+    }
+    &__panel{
+        padding-bottom: 14px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid rgba(216, 216, 216, 0.5);
+    }
+    &__view{
+        font-size: 20px;
+        line-height: 25px;
+        color: #C2C2C2;
+    }
+    &__navigation{
+        display: flex;
+        align-items: center;
+        &--btn{
+            margin-right: 12px;
+            padding: 10px 20px;
+            background: #EBEBEB;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+        }
+        &--icon{
+            margin-right: 8px;
+        }
+        &--text{
+            color: #192646;
+        }
+    }
+    &__dots{
+        margin-left: 38px;
+        padding: 10px 0;
+        width: 28px;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        & span{
+            width: 6px;
+            height: 6px;
+            background-color: #000;
+            border-radius: 50%;
+        }
+    }
+    &__subbox{
+        margin-top: 38px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    &__area{
+        width: 900px;
+        max-width: 100%;
+        display: flex;
+        align-items: flex-start;
+        &--pic{
+            margin-right: 12px;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+        &--title{
+            font-weight: bold;
+            font-size: 26px;
+            line-height: 33px;
+            color: #19202C;
+        }
+        &--publish{
+            margin: 4px 0 14px; 
+            font-size: 13px;
+            line-height: 16px;
+            color: #C2C2C2;
+        }
+        &--text{
+            font-size: 16px;
+            line-height: 22px;
+            color: #000000;
+        }
+        &--showbtn{
+            margin-top: 15px;
+            font-size: 20px;
+            line-height: 25px;
+            color: #C2C2C2;
+        }
+        &--btn{
+            padding: 10px 20px;
+            font-size: 16px;
+            line-height: 20px;
+            color: #FFFFFF;
+            background: #FF0000;
+            border-radius: 20px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1920px) {
+    .video{
+        &__area{
+            width: 80%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .video{
+        width: 100%;
+        padding:65px 15px 0;
+        &__player{
+            width: 100%;
+            height: 300px;
+            max-height: 100vh;
+        }
+        &__subbox{
+            align-items: center;
+        }
+        &__area{
+            width: auto;
+            align-items: center;
+            &--text{
+                display: none;
+            }
+            &--showbtn{
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .video{
+        &__player{
+            width: auto;
+            height: auto;
+        }
+        &__panel{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &__view{
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+        &__title{
+            margin: 10px 0 7px;
+            font-size: 24px;
+            line-height: normal;
+        }
+        &__dots{
+            display: none;
+        }
+        &__area{
+            margin-bottom: 15px;
+            &--pic{
+                width: 50px;
+                height: auto;
+            }
+            &--title{
+                font-size: 4.5vw;
+                line-height: normal;
+            }
+            &--publish{
+                margin-bottom: 0;
+                font-size: 2vw;
+            }
+            &--btn{
+                padding: 7px 14px;
+                font-size: 3vw;
+            }
+        }
+        &__navigation{
+            &--btn{
+                padding: 5px 10px;
+            }
+            &--text{
+                font-size: 13px;
+            }
+        }
+    }
+}

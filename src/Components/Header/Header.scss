@@ -1,0 +1,164 @@
+.header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 8;
+    &__nav{
+        padding: 20px 70px 20px 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__box{
+        display: flex;
+        align-items: center;
+    }
+    &__bar{
+        margin-right: 28px;
+    }
+    &__logo{
+        width: 36px;
+        margin-right: 3px;
+        &--box{
+            margin-right: 50px;
+            display: flex;
+            align-items: center;
+        }
+        &--text{
+            font-size: 22px;
+            font-weight: bold;
+        }
+    }
+    &__inputbox{
+        width: 830px;
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 12px 12px 23px;
+        background: #EBEBEB;
+        border-radius: 22px;
+    }
+    &__input{
+        width: 100%;
+        border: none;
+        outline: none;
+        background-color: transparent;
+    }
+    &__lupa{
+        width: 19px;
+    }
+    &__subbox{
+        width: 265px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__camera--btn{
+        width: 27px;
+    }
+    &__dots--btn{
+        width: 21px;
+    }
+    &__rang--btn{
+        width: 22px;
+        &:hover{
+            & .icon{
+                fill: #cc1111;
+            }
+        }
+    }
+    &__pic--btn{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(8, 5, 189);
+        color: #fff;
+        border-radius: 50%;
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 1920px) {
+    .header{
+        &__inputbox{
+            width: 45vw;
+        }
+    }
+}
+@media screen and (max-width: 1300px) {
+    .header{
+        &__nav{
+            padding: 20px 32px;
+        }
+        &__inputbox{
+            padding: 9px 9px 9px 12px;
+        }
+        &__logo{
+            margin-right: 3vw;
+        }
+        &__lupa{
+            width: 13px;
+        }
+        &__subbox{
+            width: 20vw;
+        }
+        &__pic--btn{
+            & img{
+                display: inline-block;
+                width: 35px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header{
+        &__nav{
+            padding: 10px 16px;
+        }  
+        &__dots--btn{
+            display: none;
+        }
+        &__rang--btn{
+            display: none;
+        }
+        &__inputbox{
+            width: auto;
+        }
+        &__lupa{
+            width: 19px;
+        }
+        &__bar{
+            display: none;
+        }
+        &__subbox{
+            margin-left: 25px;
+            width: auto;
+        }
+        &__box{
+            width: 100%;
+            justify-content: space-between;
+        }
+        &__pic--btn{
+            & img{
+                width: 30px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .header{
+        &__inputbox{
+            display: none;
+        }
+        &__inputbox{
+            background-color: transparent;
+            padding: 0;
+        }
+    }
+}

@@ -1,0 +1,274 @@
+.chanel{
+    width: 80%;
+    padding: 86px 20px 30px;
+    height: 100vh;
+    overflow-y: auto;
+    &__bg{
+        width: 100%;
+        max-height: 280px;
+    }
+    &__header{
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &--box{
+            display: flex;
+            align-items:center;
+        }
+        &--img{
+            margin-right: 14px;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+        &--title{
+            font-weight: bold;
+            font-size: 26px;
+            line-height: 33px;
+            color: #19202C;
+        }
+        &--control{
+            display: flex;
+            align-items: center;
+        }
+        &--count{
+            font-size: 13px;
+            line-height: 16px;
+            color: #C2C2C2;
+        }
+        &--icon{
+            margin-right: 20px;
+            width: 22px;
+        }
+        &--btn{
+            padding: 10px 20px;
+            background: #FF0000;
+            border-radius: 20px;
+            color: #FFFFFF;
+        }
+    }
+    &__pages{
+        margin-top: 20px;
+        display: flex;
+        &--icon{
+            cursor: pointer;
+        }
+        &--item{
+            margin-right: 70px;
+            padding: 3px;
+            border-bottom: 2px solid transparent;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 23px;
+            cursor: pointer;
+            &--active{
+                border-bottom: 2px solid #FF0000;
+                color: #FF0000;
+            }
+            &:hover{
+                border-bottom: 2px solid #FF0000;
+                color: #FF0000;
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+    &__box{
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__textwrapper{
+        
+        display: flex;
+        align-items: center;
+        &--img{
+            margin-right: 32px;
+            // width: 40%;
+            // max-height: 100%;
+        }
+        &--box{
+            width: 55%;
+        }
+        &--title{
+            width: 435px;
+            max-width: 100%;
+            font-weight: bold;
+            font-size: 26px;
+            line-height: 34px;
+            color: #19202C;
+        }
+        &--text{
+            margin: 10px 0 30px;
+            width: 540px;
+            max-width: 100%;
+            color: rgba(0, 0, 0, 0.6);
+        }
+        &--view{
+            font-size: 16px;
+            line-height: 22px;
+            color: #C2C2C2;
+        }
+    }
+    &__userbox{
+        width: 25%;
+        &--title{
+            margin-bottom: 30px;
+            color: #C2C2C2;
+        }
+        &--item{
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+        &--img{
+            width: 30px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+    }
+    &__card{
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &--title{
+            font-weight: bold;
+            font-size: 26px;
+            line-height: 33px;
+            color: #19202C;
+        }
+    }
+    &__control{
+        &--box{
+            display: flex;
+        }
+        &--btn{
+            width: 28px;
+            height: 28px;
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: #C2C2C2;
+            &:hover{
+                background-color: #838282;
+            }
+        }
+    }
+    &__videos{
+        margin-top: 30px;
+    }
+    &__user{
+        &--frem{
+            width: 350px;
+            max-width: 100%;
+            border-radius: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 1920px) {
+    .chanel{
+        &__textwrapper{
+            &--title{
+                width: 22.5vw;
+                font-size: 1.3vw;
+                line-height: normal;
+            }
+            &--text{
+                width: 27vw;
+            }
+            &--img{
+                width: 24vw;
+                min-height: 250px;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1300px) {
+    .chanel{
+        padding: 80px 20px;
+        &__pages{
+            &--item{
+                margin-right: 3vw;
+            }
+        }
+        &__textwrapper{
+            align-items: center;
+            flex-direction: column;
+            &--link{
+                width: 100%;
+            }
+            &--box{
+                width: 100%;
+            }
+            &--title{
+                width: 100%;
+            }
+            &--text{
+                width: 100%;
+            }
+            &--img{
+                margin-bottom: 15px;
+                width: 100%;
+                height: auto;
+            }
+            &--text{
+                font-size: 1.3vw;
+            }
+            &--view{
+                font-size: 1.3vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .chanel{
+        width: 100%;
+        padding: 60px 15px 0;
+        &__bg{
+            min-height: 100px;
+        }
+        &__header{
+            margin-top: -50px;
+            flex-direction: column;
+            align-items: flex-start;
+            &--box{
+                padding-left: 10px;
+                margin-bottom: 20px;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            &--img{
+                margin: 0;
+            }
+            &--icon{
+                display: none;
+            }
+        }
+        &__pages{
+            &--item{
+                display: none;
+            }
+            &--mobile{
+                display: inline-block;
+            }
+        }
+        &__box{
+            display: none;
+        }
+        &__card{
+            display: none;
+        }
+    }
+}
